@@ -17,6 +17,7 @@ import { NgToastModule } from 'ng-angular-popup';
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginFormComponent } from './cvTech/login-form/login-form.component';
+import { ObservableComponent } from './observable/observable.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { LoginFormComponent } from './cvTech/login-form/login-form.component';
     HeaderComponent,
     DetailledComponent,
     LoginFormComponent,
+    ObservableComponent,
   ],
   imports: [
     BrowserModule,

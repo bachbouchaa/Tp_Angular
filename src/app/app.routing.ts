@@ -4,6 +4,7 @@ import { ColorComponent } from "./color/color.component";
 import { DetailComponent } from "./cvTech/detail-cv/detail-cv.component";
 import { DetailledComponent } from "./cvTech/detail/detail.component";
 import { LoginFormComponent } from "./cvTech/login-form/login-form.component";
+import { ObservableComponent } from "./observable/observable.component";
 
 
 const APP_ROUTING: Routes = [
@@ -17,6 +18,9 @@ const APP_ROUTING: Routes = [
   },
   { path: '', redirectTo: '/cv', pathMatch: 'full' },
   { path: 'loginForm', component: LoginFormComponent},
+  { path: 'image', component: ObservableComponent},
+
+  
 ];
 
   
