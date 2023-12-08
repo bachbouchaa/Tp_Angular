@@ -1,0 +1,9 @@
+<div *ngIf="embauchees.length">
+    <h2>Liste des CVs sélectionnés pour l'embauche:</h2>
+    <div class="embauche" >
+      <span *ngFor="let personne of embauchees">
+        {{personne?.firstname}} {{personne?.name}}
+        <img class="rounded-circle" width="100px" height="100px" [src]="personne.path" >
+      </span>
+    </div>
+  </div>
