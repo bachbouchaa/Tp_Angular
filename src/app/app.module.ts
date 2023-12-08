@@ -16,7 +16,7 @@ import { DetailledComponent } from './cvTech/detail/detail.component';
 import { NgToastModule } from 'ng-angular-popup';
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { LoginFormComponent } from './cvTech/login-form/login-form.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +28,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     DetailComponent,
     EmbaucheComponent,
     HeaderComponent,
-    DetailledComponent
+    DetailledComponent,
+    LoginFormComponent,
   ],
   imports: [
     BrowserModule,

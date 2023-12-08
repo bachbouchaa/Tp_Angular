@@ -3,6 +3,7 @@ import { CvComponent } from "./cvTech/cv/cv.component";
 import { ColorComponent } from "./color/color.component";
 import { DetailComponent } from "./cvTech/detail-cv/detail-cv.component";
 import { DetailledComponent } from "./cvTech/detail/detail.component";
+import { LoginFormComponent } from "./cvTech/login-form/login-form.component";
 
 
 const APP_ROUTING: Routes = [
@@ -15,6 +16,7 @@ const APP_ROUTING: Routes = [
     ]
   },
   { path: '', redirectTo: '/cv', pathMatch: 'full' },
+  { path: 'loginForm', component: LoginFormComponent},
 ];
 
   

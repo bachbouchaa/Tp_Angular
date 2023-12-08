@@ -1,0 +1,15 @@
+<form #loginForm="ngForm">
+    <label for="email">Email</label>
+    <input required type="email" ngModel email name="email" class="form-control" id="email" #inputMail="ngModel" />
+    <div class="alert alert-danger" *ngIf="inputMail.invalid && inputMail.dirty">
+        Mail invalide
+    </div>
+    <label for="password">Password</label>
+    <input required ngModel type="password" name="password" class="form-control" minlength="4" id="password" #pwdInput="ngModel" />
+    <div class="alert alert-danger" *ngIf="pwdInput.invalid && pwdInput.touched">
+        Le mot de passe doit avoir au minimum 4 caractères
+    </div>
+    <button [disabled]="loginForm.invalid" class="btn btn-secondary my-3">
+    Envoyer
+</button>
+</form>

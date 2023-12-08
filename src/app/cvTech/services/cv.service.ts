@@ -8,10 +8,10 @@ export class CvService  {
   private personnes: Personne [];
   constructor() { 
     this.personnes= [
-      new Personne(1, 'Bacha', 'Nermine', 22, './assets/images/nermine.jpg', 123, 'developer'),
-      new Personne(2, 'Mtiri', 'Wissem', 23, './assets/images/wissem.jpg', 1111, 'developer'),
-      new Personne(3, 'Bouzid', 'Mohamed Aziz', 22, './assets/images/bouzid.jpg', 1111, 'developer'),
-      new Personne(4, 'Ati', 'Khalil', 23, './assets/images/khalil.png', 1111, 'developer')
+      new Personne(1, 'Bacha', 'Nermine', 22, './assets/images/nermine.jpg', 123, 'Web Developer'),
+      new Personne(2, 'Mtiri', 'Wissem', 23, './assets/images/wissem.jpg', 1111, 'Web Developer'),
+      new Personne(3, 'Bouzid', 'Mohamed Aziz', 22, './assets/images/bouzid.jpg', 1111, 'Web Developer'),
+      new Personne(4, 'Ati', 'Khalil', 23, './assets/images/khalil.png', 1111, 'Web Developer')
     ];
   }
   getPersonnes(): Personne []{

@@ -1,0 +1,9 @@
+.custom-success {
+    background-color: #092e7d; /* your custom color for success */
+    color: #fff; /* text color */
+  }
+  
+  .custom-primary {
+    background-color: #3581d9; /* your custom color for primary */
+    color: #fff; /* text color */
+  }
