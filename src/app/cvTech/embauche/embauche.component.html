@@ -1,9 +1,13 @@
-<div *ngIf="embauchees.length">
-    <h2>Liste des CVs sélectionnés pour l'embauche:</h2>
-    <div class="embauche" >
-      <span *ngFor="let personne of embauchees">
-        {{personne?.firstname}} {{personne?.name}}
-        <img class="rounded-circle" width="100px" height="100px" [src]="personne.path" >
-      </span>
+<div *ngIf="embauchees.length" class="mt-4">
+  <h2 class="mb-3">Liste des CVs sélectionnés pour l'embauche:</h2>
+  <div class="d-flex flex-wrap">
+    <div *ngFor="let personne of embauchees" class="mr-3 mb-3">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top rounded-circle" [src]="personne.path" alt="{{personne.firstname}} {{personne.name}}" [style.width.px]="100" [style.height.px]="100">
+        <div class="card-body">
+          <h5 class="card-title">{{personne?.firstname}} {{personne?.name}}</h5>
+        </div>
+      </div>
     </div>
   </div>
+</div>

@@ -6,11 +6,16 @@ import { DetailledComponent } from "./cvTech/detail/detail.component";
 
 
 const APP_ROUTING: Routes = [
-    {path: 'color', component: ColorComponent},
-    {path: 'cv', children: [
-      {path: '', component: CvComponent},
-      {path: ':id', component: DetailledComponent},
-    ]},
+  { path: 'color', component: ColorComponent },
+  {
+    path: 'cv', 
+    children: [
+      { path: '', component: CvComponent },
+      { path: ':id', component: DetailledComponent },
+    ]
+  },
+  { path: '', redirectTo: '/cv', pathMatch: 'full' },
 ];
+
   
   export const ROUTING = RouterModule.forRoot(APP_ROUTING);

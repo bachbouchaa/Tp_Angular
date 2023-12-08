@@ -13,6 +13,10 @@ import { DetailComponent } from './cvTech/detail-cv/detail-cv.component';
 import { ROUTING } from './app.routing';
 import { HeaderComponent } from './header/header.component';
 import { DetailledComponent } from './cvTech/detail/detail.component';
+import { NgToastModule } from 'ng-angular-popup';
+import { ToastrModule } from 'ngx-toastr';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
@@ -30,8 +34,8 @@ import { DetailledComponent } from './cvTech/detail/detail.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ROUTING
-  ],
+    ROUTING, 
+    ToastrModule.forRoot(), BrowserAnimationsModule  ],
   providers: [],
   bootstrap: [AppComponent]
 })
